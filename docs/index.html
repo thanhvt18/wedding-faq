@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Thông tin lịch trình, địa điểm và xe đưa đón cho ngày vui của hai gia đình.">
+    <meta name="theme-color" content="#fff9f5">
+    <title>Thông tin ngày vui của chúng mình</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Bỏ qua phần giới thiệu</a>
+
+    <!-- Editable section: Welcome -->
+    <header class="hero" id="welcome">
+      <div class="hero__ornament hero__ornament--left" aria-hidden="true"></div>
+      <div class="hero__ornament hero__ornament--right" aria-hidden="true"></div>
+      <div class="shell hero__inner">
+        <p class="eyebrow">Thông tin dành cho khách mời</p>
+        <div class="draft-badge">Bản nháp - chưa gửi khách</div>
+        <h1>Thông tin ngày vui của chúng mình</h1>
+        <p class="couple-name pending-value">Tên cô dâu và chú rể đang được cập nhật</p>
+        <p class="event-date">
+          <span aria-hidden="true">❀</span>
+          <strong>Ngày tổ chức đang được cập nhật</strong>
+          <span aria-hidden="true">❀</span>
+        </p>
+        <p class="hero__welcome">
+          Chúng mình rất vui được đón bạn đến chung vui cùng hai gia đình. Mọi thông tin về lịch trình,
+          đường đi và xe đưa đón sẽ được cập nhật đầy đủ tại đây nhé!
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#schedule">Xem 3 mốc giờ</a>
+          <a class="button button--secondary" href="#transport">Xem xe đưa đón</a>
+        </div>
+        <aside class="draft-notice" aria-labelledby="draft-notice-title">
+          <span class="draft-notice__icon" aria-hidden="true">i</span>
+          <div>
+            <h2 id="draft-notice-title">Thông tin đang được hoàn thiện</h2>
+            <p>
+              Tên, ngày, địa điểm, xe và số điện thoại chưa được ban tổ chức cung cấp. Vui lòng chưa dùng
+              bản nháp này để lên kế hoạch di chuyển.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <!-- Editable section: Quick navigation -->
+    <nav class="quick-nav" id="navigation" aria-label="Đi nhanh đến nội dung chính">
+      <div class="shell quick-nav__inner">
+        <p class="quick-nav__label">Bạn đang cần xem gì?</p>
+        <ul>
+          <li><a href="#schedule">Lịch trình</a></li>
+          <li><a href="#transport">Xe đưa đón</a></li>
+          <li><a href="#locations">Địa điểm</a></li>
+          <li><a href="#faq">Câu hỏi thường gặp</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+      <!-- Editable section: Schedule -->
+      <section class="section section--ivory" id="schedule" aria-labelledby="schedule-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Ba mốc chính</p>
+            <h2 id="schedule-title">Lịch trình ngày vui</h2>
+            <p class="section-intro">
+              Ngày tổ chức và địa điểm của từng hoạt động đang chờ xác nhận. Ba mốc giờ dưới đây là thông
+              tin hiện có.
+            </p>
+          </div>
+
+          <div class="schedule-date pending-panel">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <strong>Ngày tổ chức đang được cập nhật</strong>
+              <p>Chưa có ngày để thêm giá trị thời gian máy đọc. Múi giờ sử dụng sẽ là Việt Nam (UTC+7).</p>
+            </div>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline__item" id="event-engagement">
+              <div class="timeline__time"><time>09:00</time></div>
+              <div class="timeline__card">
+                <p class="card-kicker">Mốc 1</p>
+                <h3>Lễ ăn hỏi</h3>
+                <dl class="fact-list">
+                  <div>
+                    <dt>Địa điểm</dt>
+                    <dd class="pending-value">Đang chờ ban tổ chức xác nhận địa điểm phù hợp</dd>
+                  </div>
+                  <div>
+                    <dt>Hướng dẫn có mặt</dt>
+                    <dd class="pending-value">Thời gian nên có mặt và hướng dẫn di chuyển đang được cập nhật</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="timeline__item" id="event-lunch">
+              <div class="timeline__time"><time>11:00</time></div>
+              <div class="timeline__card">
+                <p class="card-kicker">Mốc 2</p>
+                <h3>Bữa trưa thân mật</h3>
+                <dl class="fact-list">
+                  <div>
+                    <dt>Địa điểm</dt>
+                    <dd class="pending-value">Đang chờ xác nhận nơi tổ chức bữa trưa</dd>
+                  </div>
+                  <div>
+                    <dt>Di chuyển</dt>
+                    <dd class="pending-value">Chưa có hướng dẫn di chuyển giữa các hoạt động</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="timeline__item timeline__item--provisional" id="event-celebration">
+              <div class="timeline__time"><time>13:30</time></div>
+              <div class="timeline__card">
+                <p class="card-kicker">Mốc 3 - tạm hiểu</p>
+                <h3>Tiệc cưới <span class="inline-status">chờ xác nhận</span></h3>
+                <p class="provisional-note">
+                  Mốc 13:30 đang được hiểu tạm từ thông tin “1h30”. Ban tổ chức cần xác nhận lại giờ và tên
+                  hoạt động trước khi gửi trang cho khách.
+                </p>
+                <dl class="fact-list">
+                  <div>
+                    <dt>Địa điểm</dt>
+                    <dd class="pending-value">Đang chờ xác nhận địa điểm tổ chức</dd>
+                  </div>
+                  <div>
+                    <dt>Nội dung</dt>
+                    <dd class="pending-value">Cần làm rõ sự khác nhau giữa bữa trưa và hoạt động lúc 13:30</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Editable section: Transport -->
+      <section class="section section--sage" id="transport" aria-labelledby="transport-title">
+        <div class="shell">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="eyebrow">Đi cùng nhau</p>
+              <h2 id="transport-title">Xe đưa đón</h2>
+            </div>
+            <p class="section-intro">
+              Chỗ ngồi và điểm đón chỉ được xác nhận riêng với trưởng đoàn. Số lượng công khai sẽ là số
+              tổng hợp, không phải danh sách hành khách hay số chỗ còn lại.
+            </p>
+          </div>
+
+          <!-- Repeat this article for each outbound vehicle; keep every ID unique. -->
+          <article class="trip-card" id="outbound-trip-pending" aria-labelledby="outbound-title">
+            <div class="trip-card__header">
+              <div>
+                <p class="direction-label">Chiều đi</p>
+                <h3 id="outbound-title">Hà Nội đến Nam Định</h3>
+              </div>
+              <span class="status-pill">Đang cập nhật</span>
+            </div>
+
+            <dl class="trip-overview">
+              <div>
+                <dt>Ngày đi</dt>
+                <dd class="pending-value">Chưa có ngày khởi hành</dd>
+              </div>
+              <div>
+                <dt>Nhãn chuyến xe</dt>
+                <dd class="pending-value">Chưa được đặt</dd>
+              </div>
+              <div>
+                <dt>Loại xe</dt>
+                <dd class="pending-value">Đang cập nhật</dd>
+              </div>
+              <div>
+                <dt>Biển số xe</dt>
+                <dd class="pending-value">Đang cập nhật</dd>
+              </div>
+              <div>
+                <dt>Trưởng đoàn</dt>
+                <dd class="pending-value">Tên và số điện thoại công khai chưa được cung cấp</dd>
+              </div>
+              <div>
+                <dt>Tổng số khách đã đăng ký</dt>
+                <dd class="pending-value">Đang đối soát, không hiển thị là 0</dd>
+              </div>
+            </dl>
+
+            <div class="stops-heading">
+              <p class="card-kicker">Theo thứ tự tuyến đường</p>
+              <h4>Điểm đón tại Hà Nội</h4>
+            </div>
+
+            <!-- Repeat this section for each outbound stop; counts must sum to the trip total. -->
+            <section class="stop-card" id="outbound-stop-pending" aria-labelledby="outbound-stop-title">
+              <div class="stop-card__number" aria-hidden="true">1</div>
+              <div class="stop-card__content">
+                <h5 id="outbound-stop-title">Điểm đón đang được cập nhật</h5>
+                <dl class="fact-list fact-list--compact">
+                  <div>
+                    <dt>Địa chỉ</dt>
+                    <dd class="pending-value">Chưa có địa chỉ đầy đủ hoặc đường dẫn bản đồ đã xác minh</dd>
+                  </div>
+                  <div>
+                    <dt>Giờ có mặt</dt>
+                    <dd class="pending-value">Đang cập nhật</dd>
+                  </div>
+                  <div>
+                    <dt>Giờ xe đón</dt>
+                    <dd class="pending-value">Đang cập nhật riêng, không giả định trùng giờ có mặt</dd>
+                  </div>
+                  <div>
+                    <dt>Giờ khởi hành</dt>
+                    <dd class="pending-value">Đang cập nhật</dd>
+                  </div>
+                  <div>
+                    <dt>Số khách đã đăng ký</dt>
+                    <dd class="pending-value">Đang đối soát</dd>
+                  </div>
+                </dl>
+                <p class="unavailable-action">Đường dẫn Google Maps sẽ xuất hiện sau khi điểm đón được xác minh.</p>
+              </div>
+            </section>
+
+            <div class="trip-note">
+              <strong>Đăng ký hoặc đổi điểm đón</strong>
+              <p>
+                Cách đăng ký, thời hạn thay đổi và hướng dẫn khi đến muộn đang được cập nhật. Trước khi phát
+                hành, mục này phải có trưởng đoàn cùng số điện thoại hoạt động.
+              </p>
+            </div>
+          </article>
+
+          <!-- Repeat this article for each return vehicle; do not reuse outbound counts. -->
+          <article class="trip-card trip-card--return" id="return-trip-pending" aria-labelledby="return-title">
+            <div class="trip-card__header">
+              <div>
+                <p class="direction-label">Chiều về</p>
+                <h3 id="return-title">Nam Định đến Hà Nội</h3>
+              </div>
+              <span class="status-pill">Đang cập nhật riêng</span>
+            </div>
+
+            <p class="return-warning">
+              Thông tin chiều về không tự động dùng lại điểm đón, số khách hoặc xe của chiều đi.
+            </p>
+
+            <dl class="trip-overview">
+              <div>
+                <dt>Ngày về</dt>
+                <dd class="pending-value">Chưa có ngày khởi hành</dd>
+              </div>
+              <div>
+                <dt>Điểm tập trung tại Nam Định</dt>
+                <dd class="pending-value">Chưa có địa chỉ hoặc đường dẫn bản đồ đã xác minh</dd>
+              </div>
+              <div>
+                <dt>Giờ có mặt</dt>
+                <dd class="pending-value">Đang cập nhật</dd>
+              </div>
+              <div>
+                <dt>Giờ khởi hành</dt>
+                <dd class="pending-value">Chưa được xác nhận</dd>
+              </div>
+              <div>
+                <dt>Xe và trưởng đoàn</dt>
+                <dd class="pending-value">Tên, loại xe, biển số và số điện thoại đang được cập nhật</dd>
+              </div>
+              <div>
+                <dt>Tổng số khách chiều về</dt>
+                <dd class="pending-value">Đang đối soát riêng</dd>
+              </div>
+            </dl>
+
+            <div class="dropoff-list" id="return-dropoffs">
+              <p class="card-kicker">Theo thứ tự trả khách</p>
+              <h4>Điểm trả tại Hà Nội</h4>
+              <p class="pending-value">Các điểm trả và thứ tự di chuyển đang được cập nhật.</p>
+            </div>
+
+            <div class="trip-note">
+              <strong>Cách nhận giờ về chính thức</strong>
+              <p>
+                Ban tổ chức cần bổ sung giờ khởi hành, người liên hệ và cách thông báo thay đổi trước khi gửi
+                trang cho khách. Hiện chưa có kênh liên hệ công khai để xác nhận.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Editable section: Locations -->
+      <section class="section section--pink" id="locations" aria-labelledby="locations-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Đến đúng nơi</p>
+            <h2 id="locations-title">Địa điểm</h2>
+            <p class="section-intro">
+              Hai địa điểm dưới đây là hai nơi riêng biệt. Địa chỉ đầy đủ và đường dẫn Google Maps chỉ được
+              thêm sau khi gia đình xác minh.
+            </p>
+          </div>
+
+          <div class="location-grid">
+            <article class="location-card location-card--groom" id="groom-home" aria-labelledby="groom-home-title">
+              <div class="location-card__marker" aria-hidden="true"></div>
+              <p class="card-kicker">Địa điểm riêng 01</p>
+              <h3 id="groom-home-title">Nhà chú rể</h3>
+              <dl class="fact-list">
+                <div>
+                  <dt>Địa chỉ</dt>
+                  <dd class="pending-value">Địa chỉ đầy đủ đang được gia đình xác nhận</dd>
+                </div>
+                <div>
+                  <dt>Lối vào hoặc mốc dễ nhận biết</dt>
+                  <dd class="pending-value">Chưa có hướng dẫn</dd>
+                </div>
+              </dl>
+              <p class="unavailable-action">Chưa có đường dẫn Google Maps đã xác minh.</p>
+            </article>
+
+            <article class="location-card location-card--bride" id="bride-home" aria-labelledby="bride-home-title">
+              <div class="location-card__marker" aria-hidden="true"></div>
+              <p class="card-kicker">Địa điểm riêng 02</p>
+              <h3 id="bride-home-title">Nhà cô dâu</h3>
+              <dl class="fact-list">
+                <div>
+                  <dt>Địa chỉ</dt>
+                  <dd class="pending-value">Địa chỉ đầy đủ đang được gia đình xác nhận</dd>
+                </div>
+                <div>
+                  <dt>Lối vào hoặc mốc dễ nhận biết</dt>
+                  <dd class="pending-value">Chưa có hướng dẫn</dd>
+                </div>
+              </dl>
+              <p class="unavailable-action">Chưa có đường dẫn Google Maps đã xác minh.</p>
+            </article>
+          </div>
+
+          <aside class="location-reminder">
+            <strong>Địa điểm bữa trưa hoặc tiệc riêng</strong>
+            <p>
+              Nếu các hoạt động không diễn ra tại hai nhà, ban tổ chức cần bổ sung từng địa điểm riêng và
+              liên kết đúng từ <a href="#schedule">lịch trình</a>.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Editable section: Families -->
+      <section class="section section--ivory" id="families" aria-labelledby="families-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Hai gia đình</p>
+            <h2 id="families-title">Gia đình chúng mình</h2>
+            <p class="section-intro">
+              Tên và cách xưng hô sẽ được hiển thị đúng theo nội dung hai gia đình phê duyệt.
+            </p>
+          </div>
+
+          <div class="family-grid">
+            <article class="family-card family-card--groom" aria-labelledby="groom-family-title">
+              <p class="family-card__side">Nhà trai</p>
+              <h3 id="groom-family-title">Gia đình chú rể</h3>
+              <dl class="family-list">
+                <div>
+                  <dt>Chú rể</dt>
+                  <dd class="pending-value">Tên đang được cập nhật</dd>
+                </div>
+                <div>
+                  <dt>Bố chú rể</dt>
+                  <dd class="pending-value">Tên hoặc lựa chọn không hiển thị đang chờ xác nhận</dd>
+                </div>
+                <div>
+                  <dt>Mẹ chú rể</dt>
+                  <dd class="pending-value">Tên hoặc lựa chọn không hiển thị đang chờ xác nhận</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="family-card family-card--bride" aria-labelledby="bride-family-title">
+              <p class="family-card__side">Nhà gái</p>
+              <h3 id="bride-family-title">Gia đình cô dâu</h3>
+              <dl class="family-list">
+                <div>
+                  <dt>Cô dâu</dt>
+                  <dd class="pending-value">Tên đang được cập nhật</dd>
+                </div>
+                <div>
+                  <dt>Bố cô dâu</dt>
+                  <dd class="pending-value">Tên hoặc lựa chọn không hiển thị đang chờ xác nhận</dd>
+                </div>
+                <div>
+                  <dt>Mẹ cô dâu</dt>
+                  <dd class="pending-value">Tên hoặc lựa chọn không hiển thị đang chờ xác nhận</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editable section: FAQ -->
+      <section class="section section--sage" id="faq" aria-labelledby="faq-title">
+        <div class="shell shell--narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Chuẩn bị thật nhẹ nhàng</p>
+            <h2 id="faq-title">Câu hỏi thường gặp</h2>
+            <p class="section-intro">
+              Mỗi câu trả lời dẫn về phần thông tin chính để bạn luôn xem được nội dung mới nhất.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details id="faq-arrival">
+              <summary>Mình nên có mặt lúc mấy giờ?</summary>
+              <div class="faq-answer">
+                <p>
+                  Ba mốc hiện có là 09:00, 11:00 và mốc 13:30 đang chờ xác nhận. Giờ nên có mặt sớm chưa
+                  được cung cấp. Bạn xem tình trạng mới nhất tại <a href="#schedule">lịch trình</a>.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-event-locations">
+              <summary>Lễ ăn hỏi, bữa trưa và tiệc cưới diễn ra ở đâu?</summary>
+              <div class="faq-answer">
+                <p>
+                  Địa điểm của từng hoạt động chưa được xác nhận. Khi có thông tin, mỗi mốc trong
+                  <a href="#schedule">lịch trình</a> sẽ dẫn đến đúng địa điểm, không tự động coi là cùng một nơi.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-independent-travel">
+              <summary>Mình tự đi thì xem đường đến nhà trai, nhà gái ở đâu?</summary>
+              <div class="faq-answer">
+                <p>
+                  Bạn xem hai thẻ riêng tại <a href="#locations">mục địa điểm</a>. Địa chỉ và nút bản đồ chỉ
+                  xuất hiện sau khi từng gia đình xác minh đúng điểm đến.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-register-coach">
+              <summary>Mình đăng ký đi xe hoặc đổi điểm đón như thế nào?</summary>
+              <div class="faq-answer">
+                <p>
+                  Cách đăng ký và đổi điểm đón đang được cập nhật tại <a href="#transport">mục xe đưa đón</a>.
+                  Việc thay đổi chỉ có hiệu lực sau khi trưởng đoàn xác nhận riêng.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-seat-status">
+              <summary>Làm sao biết mình đã được xếp chỗ trên xe?</summary>
+              <div class="faq-answer">
+                <p>
+                  Số tổng hợp trên trang không phải xác nhận chỗ cá nhân. Bạn cần liên hệ trưởng đoàn theo
+                  thông tin sẽ được bổ sung tại <a href="#contact">mục liên hệ</a>.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-late-arrival">
+              <summary>Nếu đến điểm đón muộn thì mình liên hệ ai?</summary>
+              <div class="faq-answer">
+                <p>
+                  Tên và số điện thoại trưởng đoàn chưa được cung cấp. Trước khi phát hành, từng chuyến tại
+                  <a href="#transport">mục xe đưa đón</a> sẽ có người phụ trách để bạn gọi trực tiếp.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-return">
+              <summary>Xe từ Nam Định về Hà Nội lúc mấy giờ, trả khách ở đâu?</summary>
+              <div class="faq-answer">
+                <p>
+                  Giờ về và các điểm trả đang được cập nhật riêng, không lấy lại từ chiều đi. Bạn xem thẻ
+                  <a href="#return-trip-pending">chiều về</a> để kiểm tra trạng thái.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-parking">
+              <summary>Ở địa điểm tổ chức có chỗ gửi xe không?</summary>
+              <div class="faq-answer">
+                <p>
+                  Chưa có thông tin được xác nhận về chỗ gửi xe. Ban tổ chức cần bổ sung hướng dẫn tại
+                  <a href="#locations">mỗi địa điểm</a> hoặc một người hỗ trợ phù hợp trước khi phát hành.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-attire">
+              <summary>Mình nên mặc gì để vừa thoải mái vừa phù hợp?</summary>
+              <div class="faq-answer">
+                <p>
+                  Hiện chưa có hướng dẫn trang phục từ hai gia đình. Nếu có yêu cầu cụ thể, nội dung sẽ được
+                  cập nhật tại đây thay vì suy đoán.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-accessibility">
+              <summary>Nếu đi cùng trẻ nhỏ, người lớn tuổi hoặc cần hỗ trợ di chuyển thì báo ai?</summary>
+              <div class="faq-answer">
+                <p>
+                  Khả năng tiếp cận, ghế trẻ em và hỗ trợ di chuyển chưa được xác nhận. Vui lòng kiểm tra
+                  người hỗ trợ phù hợp tại <a href="#contact">mục liên hệ</a> khi thông tin được bổ sung.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-dietary">
+              <summary>Mình ăn chay hoặc có nhu cầu ăn uống đặc biệt thì liên hệ ai?</summary>
+              <div class="faq-answer">
+                <p>
+                  Ban tổ chức chưa cung cấp đầu mối cho nhu cầu ăn uống. Thông tin chỉ được thêm sau khi có
+                  người nhận và xác nhận yêu cầu.
+                </p>
+              </div>
+            </details>
+
+            <details id="faq-weather-updates">
+              <summary>Nếu trời mưa hoặc lịch trình thay đổi thì xem thông báo ở đâu?</summary>
+              <div class="faq-answer">
+                <p>
+                  Thông báo sẽ xuất hiện gần đầu trang và chi tiết luôn được sửa tại đúng mục
+                  <a href="#schedule">lịch trình</a>, <a href="#transport">xe đưa đón</a> hoặc
+                  <a href="#locations">địa điểm</a>. Trang không tự cập nhật theo thời gian thực, nên hãy tải
+                  lại trang để xem bản mới nhất.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editable section: Contacts and update marker -->
+      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="shell shell--narrow">
+          <div class="section-heading section-heading--light">
+            <p class="eyebrow">Khi bạn cần hỗ trợ</p>
+            <h2 id="contact-title">Liên hệ</h2>
+            <p class="section-intro">
+              Chưa có tên hoặc số điện thoại nào được duyệt để công khai. Vì vậy bản nháp không tạo nút gọi
+              giả hoặc đường dẫn rỗng.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card">
+              <p class="card-kicker">Hỗ trợ chung</p>
+              <h3>Người hỗ trợ chính</h3>
+              <p class="pending-value">Tên, vai trò và số điện thoại đang được cập nhật</p>
+            </article>
+            <article class="contact-card">
+              <p class="card-kicker">Hỗ trợ di chuyển</p>
+              <h3>Trưởng đoàn xe</h3>
+              <p class="pending-value">Tên và số điện thoại đang được cập nhật</p>
+            </article>
+          </div>
+
+          <div class="update-card">
+            <span aria-hidden="true">✦</span>
+            <p>
+              <strong>Bản nháp cập nhật lần cuối:</strong>
+              <time datetime="2026-10-15T16:08:00+07:00">15/10/2026, 16:08 (giờ Việt Nam)</time>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <p class="site-footer__thanks">Cảm ơn bạn đã dành thời gian đến chung vui cùng chúng mình!</p>
+        <p class="site-footer__note">
+          Đây là bản nháp nội dung. Thông tin chỉ nên được chia sẻ sau khi hai gia đình xác nhận đầy đủ.
+        </p>
+        <a href="#welcome">Về đầu trang</a>
+      </div>
+    </footer>
+  </body>
+</html>

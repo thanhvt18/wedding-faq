@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Biểu tượng ngày vui</title>
+  <rect width="64" height="64" rx="18" fill="#fff9f5"/>
+  <path d="M32 51C23 43 13 36 13 25c0-7 5-12 12-12 4 0 7 2 9 5 2-3 5-5 9-5 7 0 12 5 12 12 0 11-10 18-19 26l-2 2-2-2Z" fill="#843b4d"/>
+  <path d="M16 49c7-2 12-6 16-13M48 49c-7-2-12-6-16-13" fill="none" stroke="#78917a" stroke-linecap="round" stroke-width="3"/>
+</svg>
