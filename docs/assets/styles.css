@@ -897,6 +897,10 @@ dd,
   font-weight: 800;
 }
 
+.site-footer a:focus-visible {
+  outline-color: #fffaf7;
+}
+
 @media (min-width: 40rem) {
   .shell {
     width: min(100% - 3rem, var(--shell));
