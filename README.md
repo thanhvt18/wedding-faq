@@ -63,7 +63,7 @@ Always replace pending text with organizer-approved facts. Never create plausibl
 1. Find the event under `Editable section: Schedule`.
 2. Update the visible value inside `<time>`.
 3. Once the date is known, add or update its complete `datetime` value with the Vietnam offset, for example the confirmed date plus `T09:00:00+07:00`. Do not copy that example as event data.
-4. Update any FAQ wording that directly mentions the same time.
+4. Keep FAQ answers linked to the canonical schedule; do not repeat event times in FAQ copy.
 5. Confirm chronological order and update the content timestamp.
 
 Do not add a machine-readable date until the real calendar date is known. Do not convert wedding times through the visitor's device timezone.
